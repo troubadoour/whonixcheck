@@ -74,7 +74,7 @@ If you know what you are doing and changed this on purpose, feel free to
 disable this check. [2]
 <br></br><br></br>
 [1] <a href=https://www.whonix.org/wiki/Dev/Design-Shared#timezone>https://www.whonix.org/wiki/Dev/Design-Shared#timezone</a>
-<br></br>[2] Create a file <code>/etc/whonix.d/50_whonixcheck_user</code> and add:
+<br></br>[2] Create a file <code>/etc/whonix.d/50_whonixcheck_user.conf</code> and add:
 <code><blockquote>whonixcheck_skip_functions+=\" $FUNCNAME \"</blockquote></code></p>"
       $output_x ${output_opts[@]} --messagex --typex "error" --message "$MSG"
       $output_cli ${output_opts[@]} --messagecli --typecli "error" --message "$MSG"
